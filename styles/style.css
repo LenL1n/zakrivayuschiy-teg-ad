@@ -16,7 +16,7 @@
   background: var(--background-gradient);
 }
 
-main {
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
