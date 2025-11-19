@@ -12,7 +12,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font), 'Arial', sans-serif;
-  font-variation-settings: var(--text-weight);
+  font-variation-settings: 'wght' var(--text-weight);
   background: var(--background-gradient);
 }
 
@@ -39,13 +39,13 @@
 }
 
 .header__title {
-  font-weight: var(--title-weight);
+  font-variation-settings: 'wght' var(--title-weight);
   font-size: clamp(3.0625rem, 1.8943rem + 4.9844vw, 4.0625rem);
   text-align: center;
 }
 
 .header__text {
-  font-weight: var(--text-weight);
+  font-variation-settings: 'wght' var(--text-weight);
   font-size: clamp(0.875rem, 0.2179rem + 2.8037vw, 1.4375rem);
   text-align: center;
   text-transform: uppercase;
@@ -59,7 +59,7 @@
 
 .card__title {
   font-size: 18px;
-  font-weight: var(--title-weight);
+  font-variation-settings: 'wght' var(--title-weight);
   padding: 3px 10px;
   font-family: var(--main-font);
 }
@@ -100,7 +100,7 @@
 .card__text {
   font-family: var(--main-font);
   font-size: 18px;
-  font-weight: var(--text-weight);
+  font-variation-settings: 'wght' var(--text-weight);
 }
 
 .card__buttons {
@@ -238,7 +238,7 @@
   color: #fff;
   font-family: var(--accent-font);
   font-size: 14px;
-  font-weight: var(--text-weight);
+  font-variation-settings: 'wght' var(--text-weight);
   mix-blend-mode: difference;
   position: relative;
 }
@@ -332,6 +332,13 @@
     text-shadow: none;
   }
 }
+
+ @supports (-webkit-text-stroke: 1px #fff) {
+    .card__image__label {
+      -webkit-text-stroke: 1px #fff;
+      text-shadow: none;
+    }
+  }
 
 @media (width <= 375px) {
   .button__floppy {
