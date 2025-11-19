@@ -279,10 +279,6 @@
   background: rgba(0, 0, 0, 0.75);
 }
 
-.dialog form {
-  display: block;
-}
-
 .dialog svg {
   width: 39px;
   height: 39px;
