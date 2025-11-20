@@ -83,11 +83,7 @@
   color: #000;
   mix-blend-mode: hard-light;
   opacity: 0.5;
-  text-shadow:
-    -1px 0 #fff,
-    0 1px #fff,
-    1px 0 #fff,
-    0 -1px #fff;
+  text-shadow: 0 0 1px #fff;
 }
 
 .card__text-container {
@@ -320,13 +316,6 @@
 
 .filter-grayscale {
   filter: grayscale(100%);
-}
-
-@supports (mix-blend-mode: hard-light) {
-  .card__label {
-    mix-blend-mode: hard-light;
-    text-shadow: none;
-  }
 }
 
  @supports (-webkit-text-stroke: 1px #fff) {
